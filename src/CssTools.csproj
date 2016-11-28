@@ -60,6 +60,7 @@
     <Compile Include="Classify\ValueTaggerProvider.cs" />
     <Compile Include="Classify\VendorClassifier.cs" />
     <Compile Include="CssToolsPackage.cs" />
+    <Compile Include="DragDrop\FontDrop.cs" />
     <Compile Include="ExtensionMethods\AtDirectiveExtensions.cs" />
     <Compile Include="ExtensionMethods\ColorModelExtensions.cs" />
     <Compile Include="ExtensionMethods\CssExtensions.cs" />

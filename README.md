@@ -17,6 +17,7 @@ See the [change log](CHANGELOG.md) for changes and road map.
 - Color adornments
 - Image and font preview
 - Selector specificity tooltip
+- Drag 'n drop of font files
 
 ### Color adornments
 coming soon...

@@ -7,6 +7,7 @@
 - [x] Property value signature help
 - [x] Selector highlighter
 - [x] Various classifiers
+- [x] Drag 'n drop font files
 
 Features that have a checkmark are complete and available for
 download in the
