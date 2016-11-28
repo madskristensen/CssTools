@@ -25,6 +25,18 @@ See the [change log](CHANGELOG.md) for changes and road map.
 ### Color adornments
 coming soon...
 
+### Image and font preview
+coming soon...
+
+### Darken/lighten hex colors
+coming soon...
+
+### Vendor property synchronization
+coming soon...
+
+### Media query Intellisense
+coming soon...
+
 ## Contribute
 Check out the [contribution guidelines](.github/CONTRIBUTING.md)
 if you want to contribute to this project.
