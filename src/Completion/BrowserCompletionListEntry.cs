@@ -25,17 +25,17 @@ namespace CssTools
         private void SetIcon(string browserName)
         {
             if (browserName.Contains("internet explorer"))
-                _icon = BitmapFrame.Create(new Uri("pack://application:,,,/WebEssentials2015;component/Resources/Images/Browsers/ie.png", UriKind.RelativeOrAbsolute));
+                _icon = BitmapFrame.Create(new Uri("pack://application:,,,/CssTools;component/Resources/Browsers/ie.png", UriKind.RelativeOrAbsolute));
             else if (browserName.Contains("firefox"))
-                _icon = BitmapFrame.Create(new Uri("pack://application:,,,/WebEssentials2015;component/Resources/Images/Browsers/ff.png", UriKind.RelativeOrAbsolute));
+                _icon = BitmapFrame.Create(new Uri("pack://application:,,,/CssTools;component/Resources/Browsers/ff.png", UriKind.RelativeOrAbsolute));
             else if (browserName.Contains("opera"))
-                _icon = BitmapFrame.Create(new Uri("pack://application:,,,/WebEssentials2015;component/Resources/Images/Browsers/o.png", UriKind.RelativeOrAbsolute));
+                _icon = BitmapFrame.Create(new Uri("pack://application:,,,/CssTools;component/Resources/Browsers/o.png", UriKind.RelativeOrAbsolute));
             else if (browserName.Contains("chrome"))
-                _icon = BitmapFrame.Create(new Uri("pack://application:,,,/WebEssentials2015;component/Resources/Images/Browsers/c.png", UriKind.RelativeOrAbsolute));
+                _icon = BitmapFrame.Create(new Uri("pack://application:,,,/CssTools;component/Resources/Browsers/c.png", UriKind.RelativeOrAbsolute));
             else if (browserName.Contains("safari"))
-                _icon = BitmapFrame.Create(new Uri("pack://application:,,,/WebEssentials2015;component/Resources/Images/Browsers/s.png", UriKind.RelativeOrAbsolute));
+                _icon = BitmapFrame.Create(new Uri("pack://application:,,,/CssTools;component/Resources/Browsers/s.png", UriKind.RelativeOrAbsolute));
             else if (browserName.Contains("microsoft edge"))
-                _icon = BitmapFrame.Create(new Uri("pack://application:,,,/WebEssentials2015;component/Resources/Images/Browsers/e.png", UriKind.RelativeOrAbsolute));
+                _icon = BitmapFrame.Create(new Uri("pack://application:,,,/CssTools;component/Resources/Browsers/e.png", UriKind.RelativeOrAbsolute));
             else
                 _icon = GlyphService.GetGlyph(StandardGlyphGroup.GlyphGroupEnumMember, StandardGlyphItem.GlyphItemPublic);
         }

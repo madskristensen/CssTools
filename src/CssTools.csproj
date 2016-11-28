@@ -288,6 +288,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="BrowserLink\BrowserInfo\BrowserInfo.js" />
+    <Resource Include="Resources\Browsers\c.png" />
+    <Resource Include="Resources\Browsers\e.png" />
+    <Resource Include="Resources\Browsers\ff.png" />
+    <Resource Include="Resources\Browsers\ie.png" />
+    <Resource Include="Resources\Browsers\o.png" />
+    <Resource Include="Resources\Browsers\s.png" />
     <Content Include="Resources\Icon.png">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
