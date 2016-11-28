@@ -2,8 +2,7 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/qpdkwo2g3qov6ka8?svg=true)](https://ci.appveyor.com/project/madskristensen/csstools)
 
-<!-- Update the VS Gallery link after you upload the VSIX-->
-Download this extension from the [VS Gallery](https://visualstudiogallery.msdn.microsoft.com/[GuidFromGallery])
+Download this extension from the [VS Marketplace](https://marketplace.visualstudio.com/vsgallery/a2b0e9a8-85c6-4495-8578-dc1da0a8791c)
 or get the [CI build](http://vsixgallery.com/extension/0020efc9-e999-4e6f-a2b6-604127f480bc/).
 
 ---------------------------------------
