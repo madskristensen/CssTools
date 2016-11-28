@@ -18,6 +18,9 @@ See the [change log](CHANGELOG.md) for changes and road map.
 - Image and font preview
 - Selector specificity tooltip
 - Drag 'n drop of font files
+- Darken/lighten hex colors
+- Vendor property synchronization
+- Media query Intellisense powered by Browser Link
 
 ### Color adornments
 coming soon...

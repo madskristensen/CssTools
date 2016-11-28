@@ -60,6 +60,9 @@
     <Compile Include="Classify\ImportantClassifier.cs" />
     <Compile Include="Classify\ValueTaggerProvider.cs" />
     <Compile Include="Classify\VendorClassifier.cs" />
+    <Compile Include="Commands\ArrowsCommandTarget.cs" />
+    <Compile Include="Commands\CssCreationListener.cs" />
+    <Compile Include="Commands\RetriggerCommandTarget.cs" />
     <Compile Include="Completion\BrowserCompletionListEntry.cs" />
     <Compile Include="Completion\CompletionListEntry.cs" />
     <Compile Include="Completion\CompletionProviders\BrowserLinkCompletionProvider.cs" />
