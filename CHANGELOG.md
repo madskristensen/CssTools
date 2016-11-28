@@ -8,6 +8,9 @@
 - [x] Selector highlighter
 - [x] Various classifiers
 - [x] Drag 'n drop font files
+- [x] Media query Intellisense
+- [x] Font import Intellisense
+- [x] Intellisense filters for unsupported properties
 
 Features that have a checkmark are complete and available for
 download in the
