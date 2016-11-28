@@ -23,19 +23,27 @@ See the [change log](CHANGELOG.md) for changes and road map.
 - Media query Intellisense powered by Browser Link
 
 ### Color adornments
-coming soon...
+All color types are supported, including the new CSS 3 formats.
+
+![Colors](art/color-adornments.png)
 
 ### Image and font preview
-coming soon...
+![Font preview](art/font-preview.png)
+
+![Image preview](art/image-preview.png)
 
 ### Darken/lighten hex colors
-coming soon...
+Place the caret on a hex color value and hit **Ctrl+Shift+Up/Down** to
+darken or lighten the color value.
+
+The same can be done with any number value such as `1.2px` to increase
+or decrease the value.
 
 ### Vendor property synchronization
-coming soon...
+[![Vendor sync](http://img.youtube.com/vi/9NFKU7CCewE/0.jpg)](http://www.youtube.com/watch?v=9NFKU7CCewE)
 
 ### Media query Intellisense
-coming soon...
+![Media query type](art/mediatype.png)
 
 ## Contribute
 Check out the [contribution guidelines](.github/CONTRIBUTING.md)
