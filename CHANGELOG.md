@@ -8,9 +8,10 @@
 - [x] Selector highlighter
 - [x] Various classifiers
 - [x] Drag 'n drop font files
-- [x] Media query Intellisense
+- [x] Media query Intellisense powered by Browser Link
 - [x] Font import Intellisense
 - [x] Intellisense filters for unsupported properties
+- [x] Vendor property synchronization
 
 Features that have a checkmark are complete and available for
 download in the

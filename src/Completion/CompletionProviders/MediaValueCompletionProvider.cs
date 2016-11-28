@@ -83,31 +83,31 @@ namespace CssTools
                     yield return new CompletionListEntry("enabled");
                     break;
 
-                //case "width":
-                //case "max-width":
-                //case "min-width":
-                //case "device-width":
-                //case "max-device-width":
-                //case "min-device-width":
-                //    foreach (var browser in BrowserLink.BrowserInfo.BrowserCapDictionary.Values.OrderByDescending(b => b.Width))
-                //    {
-                //        string value = browser.Width + "px";
-                //        yield return new BrowserCompletionListEntry(value, browser.Name);
-                //    }
-                //    break;
+                case "width":
+                case "max-width":
+                case "min-width":
+                case "device-width":
+                case "max-device-width":
+                case "min-device-width":
+                    foreach (var browser in BrowserInfo.BrowserCapDictionary.Values.OrderByDescending(b => b.Width))
+                    {
+                        string value = browser.Width + "px";
+                        yield return new BrowserCompletionListEntry(value, browser.Name);
+                    }
+                    break;
 
-                //case "height":
-                //case "max-height":
-                //case "min-height":
-                //case "device-height":
-                //case "max-device-height":
-                //case "min-device-height":
-                //    foreach (var browser in BrowserLink.BrowserInfo.BrowserCapDictionary.Values.OrderByDescending(b => b.Height))
-                //    {
-                //        string value = browser.Height + "px";
-                //        yield return new BrowserCompletionListEntry(value, browser.Name);
-                //    }
-                //    break;
+                case "height":
+                case "max-height":
+                case "min-height":
+                case "device-height":
+                case "max-device-height":
+                case "min-device-height":
+                    foreach (var browser in BrowserInfo.BrowserCapDictionary.Values.OrderByDescending(b => b.Height))
+                    {
+                        string value = browser.Height + "px";
+                        yield return new BrowserCompletionListEntry(value, browser.Name);
+                    }
+                    break;
             }
         }
     }

@@ -53,6 +53,7 @@
     <Compile Include="Adornments\ColorTagger.cs" />
     <Compile Include="Adornments\ColorTaggerProvider.cs" />
     <Compile Include="Adornments\IntraTextAdornmentTagger.cs" />
+    <Compile Include="BrowserLink\BrowserInfo\BrowserInfo.cs" />
     <Compile Include="Classify\Base64TaggerProvider.cs" />
     <Compile Include="Classify\CssHighlightWordTagger.cs" />
     <Compile Include="Classify\EmbeddedImageClassifier.cs" />
@@ -61,6 +62,7 @@
     <Compile Include="Classify\VendorClassifier.cs" />
     <Compile Include="Completion\BrowserCompletionListEntry.cs" />
     <Compile Include="Completion\CompletionListEntry.cs" />
+    <Compile Include="Completion\CompletionProviders\BrowserLinkCompletionProvider.cs" />
     <Compile Include="Completion\CompletionProviders\ColorCompletionProvider.cs" />
     <Compile Include="Completion\CompletionProviders\FontCompletionProvider.cs" />
     <Compile Include="Completion\CompletionProviders\MediaCompletionProvider.cs" />
@@ -243,6 +245,11 @@
       <HintPath>..\packages\Microsoft.VisualStudio.Validation.15.0.11-pre\lib\net45\Microsoft.VisualStudio.Validation.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.VisualStudio.Web.BrowserLink.12.0, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Microsoft.VisualStudio.Web.BrowserLink.12.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.Web.Extensions">
       <HintPath>..\lib\Microsoft.VisualStudio.Web.Extensions.dll</HintPath>
       <Private>False</Private>
@@ -272,6 +279,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="BrowserLink\BrowserInfo\BrowserInfo.js" />
     <Content Include="Resources\Icon.png">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
