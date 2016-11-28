@@ -1,6 +1,12 @@
 # Road map
 
 - [x] Color adornments
+- [x] Font preview
+- [x] Image preview
+- [x] Selector specificity tooltip
+- [x] Property value signature help
+- [x] Selector highlighter
+- [x] Various classifiers
 
 Features that have a checkmark are complete and available for
 download in the

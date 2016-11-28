@@ -53,11 +53,44 @@
     <Compile Include="Adornments\ColorTagger.cs" />
     <Compile Include="Adornments\ColorTaggerProvider.cs" />
     <Compile Include="Adornments\IntraTextAdornmentTagger.cs" />
+    <Compile Include="Classify\Base64TaggerProvider.cs" />
+    <Compile Include="Classify\CssHighlightWordTagger.cs" />
+    <Compile Include="Classify\EmbeddedImageClassifier.cs" />
+    <Compile Include="Classify\ImportantClassifier.cs" />
+    <Compile Include="Classify\ValueTaggerProvider.cs" />
+    <Compile Include="Classify\VendorClassifier.cs" />
     <Compile Include="CssToolsPackage.cs" />
-    <Compile Include="Helpers\ColorModelExtensions.cs" />
+    <Compile Include="ExtensionMethods\AtDirectiveExtensions.cs" />
+    <Compile Include="ExtensionMethods\ColorModelExtensions.cs" />
+    <Compile Include="ExtensionMethods\CssExtensions.cs" />
     <Compile Include="Helpers\CssItemAggregator.cs" />
+    <Compile Include="Helpers\CssItemCollector.cs" />
+    <Compile Include="Helpers\CssTreeWatcher.cs" />
+    <Compile Include="ExtensionMethods\DeclarationExtensions.cs" />
+    <Compile Include="ExtensionMethods\Extensions.cs" />
+    <Compile Include="Helpers\FileHelpers.cs" />
     <Compile Include="Helpers\OptionHelpers.cs" />
+    <Compile Include="Helpers\ProjectHelpers.cs" />
+    <Compile Include="Helpers\VendorHelpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuickInfo\Font\FontQuickInfo.cs" />
+    <Compile Include="QuickInfo\Font\FontQuickInfoController.cs" />
+    <Compile Include="QuickInfo\Font\FontQuickInfoControllerProvider.cs" />
+    <Compile Include="QuickInfo\Font\FontQuickInfoSourceProvider.cs" />
+    <Compile Include="QuickInfo\Image\ImageQuickInfo.cs" />
+    <Compile Include="QuickInfo\Image\ImageQuickInfoController.cs" />
+    <Compile Include="QuickInfo\Image\ImageQuickInfoControllerProvider.cs" />
+    <Compile Include="QuickInfo\Image\ImageQuickInfoSourceProvider.cs" />
+    <Compile Include="QuickInfo\Selector\SelectorQuickInfo.cs" />
+    <Compile Include="QuickInfo\Selector\SelectorQuickInfoController.cs" />
+    <Compile Include="QuickInfo\Selector\SelectorQuickInfoControllerProvider.cs" />
+    <Compile Include="QuickInfo\Selector\SelectorQuickInfoSourceProvider.cs" />
+    <Compile Include="QuickInfo\Selector\SelectorSpecificity.cs" />
+    <Compile Include="QuickInfo\ValueOrder\RemoveCssSignatureHelpSource.cs" />
+    <Compile Include="QuickInfo\ValueOrder\ValueOrderFactory.cs" />
+    <Compile Include="QuickInfo\ValueOrder\ValueOrderSignature.cs" />
+    <Compile Include="QuickInfo\ValueOrder\ValueOrderSignatureHelpSource.cs" />
+    <Compile Include="QuickInfo\ValueOrder\ValueOrderSignatureHelpSourceProvider.cs" />
     <Compile Include="source.extension.cs">
       <DependentUpon>source.extension.vsixmanifest</DependentUpon>
     </Compile>
@@ -97,6 +130,10 @@
     <Reference Include="Microsoft.VisualStudio.CommandBars, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Microsoft.VisualStudio.ComponentModelHost, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.ComponentModelHost.15.0.25824-RC\lib\net45\Microsoft.VisualStudio.ComponentModelHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.CoreUtility, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.VisualStudio.CoreUtility.15.0.25901-RC\lib\net45\Microsoft.VisualStudio.CoreUtility.dll</HintPath>
       <Private>True</Private>
@@ -107,6 +144,10 @@
     </Reference>
     <Reference Include="Microsoft.VisualStudio.Imaging, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.VisualStudio.Imaging.15.0.25901-RC\lib\net45\Microsoft.VisualStudio.Imaging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Language.Intellisense, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.Language.Intellisense.15.0.25824-RC\lib\net45\Microsoft.VisualStudio.Language.Intellisense.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -216,6 +257,7 @@
     <Content Include="Resources\Icon.png">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <Resource Include="Resources\nopreview.png" />
     <Content Include="source.extension.ico">
       <DependentUpon>source.extension.vsixmanifest</DependentUpon>
     </Content>
