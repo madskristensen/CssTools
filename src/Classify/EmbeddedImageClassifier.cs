@@ -1,22 +1,20 @@
-﻿using System;
+﻿using Microsoft.CSS.Core.Document;
+using Microsoft.CSS.Core.Parser;
+using Microsoft.CSS.Core.TreeItems;
+using Microsoft.CSS.Core.TreeItems.Comments;
+using Microsoft.CSS.Core.TreeItems.Functions;
+using Microsoft.CSS.Core.Utilities;
+using Microsoft.VisualStudio.Text;
+using Microsoft.VisualStudio.Text.Classification;
+using Microsoft.VisualStudio.Utilities;
+using Microsoft.Web.Editor.EditorHelpers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Threading;
-using Microsoft.CSS.Core;
-using Microsoft.VisualStudio.Text;
-using Microsoft.VisualStudio.Text.Classification;
-using Microsoft.VisualStudio.Utilities;
-using Microsoft.CSS.Core.TreeItems;
-using Microsoft.CSS.Core.TreeItems.Functions;
-using Microsoft.CSS.Core.Utilities;
-using Microsoft.CSS.Core.Document;
-using Microsoft.CSS.Core.Parser;
-using Microsoft.Web.Core;
-using Microsoft.CSS.Core.TreeItems.Comments;
-using Microsoft.Web.Editor.EditorHelpers;
 
 namespace CssTools
 {
@@ -71,7 +69,7 @@ namespace CssTools
         public IList<ClassificationSpan> GetClassificationSpans(SnapshotSpan span)
         {
             List<ClassificationSpan> spans = new List<ClassificationSpan>();
-            
+
             foreach (Declaration dec in Cache.Where(d => d.PropertyName.Text.EndsWith("background-image", StringComparison.OrdinalIgnoreCase) && span.Start <= d.Start && span.End >= d.AfterEnd))
             {
                 if (dec.PropertyName.Text.StartsWith("*background", StringComparison.OrdinalIgnoreCase))

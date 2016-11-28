@@ -1,8 +1,6 @@
-﻿using Microsoft.CSS.Core;
-using Microsoft.CSS.Core.Parser;
+﻿using Microsoft.CSS.Core.Parser;
 using Microsoft.CSS.Core.TreeItems;
 using Microsoft.CSS.Core.TreeItems.Selectors;
-using Microsoft.CSS.Editor;
 using Microsoft.CSS.Editor.Document;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Editor;

@@ -1,9 +1,9 @@
-﻿using System;
+﻿using Microsoft.CSS.Editor.Completion;
+using Microsoft.VisualStudio.Text.Editor;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using Microsoft.VisualStudio.Text.Editor;
-using Microsoft.CSS.Editor.Completion;
 
 namespace CssTools
 {

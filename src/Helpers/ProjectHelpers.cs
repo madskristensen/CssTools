@@ -123,7 +123,7 @@ namespace CssTools
 
                 return "";
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 //Logger.Log(ex);
                 return string.Empty;
@@ -165,7 +165,7 @@ namespace CssTools
                 if (activeSolutionProjects != null && activeSolutionProjects.Length > 0)
                     return activeSolutionProjects.GetValue(0) as Project;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 //Logger.Log("Error getting the active project" + ex);
             }
@@ -331,7 +331,7 @@ namespace CssTools
 
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 System.Diagnostics.Debugger.Launch();
                // Logger.Log(ex);
@@ -436,7 +436,7 @@ namespace CssTools
             {
                 return DTE.Solution.FindProjectItem(fileName);
             }
-            catch (Exception exception)
+            catch (Exception)
             {
                 //Logger.Log(exception.Message);
 

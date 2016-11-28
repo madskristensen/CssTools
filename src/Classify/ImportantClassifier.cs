@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.Composition;
-using System.Linq;
-using Microsoft.CSS.Core;
+﻿using Microsoft.CSS.Core.Document;
+using Microsoft.CSS.Core.Parser;
+using Microsoft.CSS.Core.TreeItems;
+using Microsoft.CSS.Core.Utilities;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Classification;
 using Microsoft.VisualStudio.Utilities;
-using Microsoft.CSS.Core.Utilities;
-using Microsoft.CSS.Core.Parser;
-using Microsoft.CSS.Core.TreeItems;
-using Microsoft.CSS.Core.Document;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.Composition;
+using System.Linq;
 
 namespace CssTools
 {
