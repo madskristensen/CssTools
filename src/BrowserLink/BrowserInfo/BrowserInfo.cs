@@ -15,7 +15,7 @@ namespace CssTools
 
         public string GetScript()
         {
-            using (Stream stream = GetType().Assembly.GetManifestResourceStream("MadsKristensen.EditorExtensions.BrowserLink.BrowserInfo.BrowserInfo.js"))
+            using (Stream stream = GetType().Assembly.GetManifestResourceStream("CssTools.BrowserLink.BrowserInfo.BrowserInfo.js"))
             using (StreamReader reader = new StreamReader(stream))
             {
                 return reader.ReadToEnd();
@@ -46,11 +46,11 @@ namespace CssTools
         }
 
         [BrowserLinkCallback] // This method can be called from JavaScript
-        public void CollectInfo(string name, int width, int height)
+        public void CollectInfo(int width, int height)
         {
             var browserCap = new BrowserCap
             {
-                Name = name,
+                Name = _current.AppName,
                 Width = width,
                 Height = height,
             };
