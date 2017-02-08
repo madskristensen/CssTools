@@ -5,6 +5,7 @@
     <DisplayName>CSS Tools</DisplayName>
     <Description xml:space="preserve">Provides additional features to the CSS editor in Visual Studio.</Description>
     <MoreInfo>https://github.com/madskristensen/CssTools</MoreInfo>
+    <License>Resources\LICENSE</License>
     <ReleaseNotes>https://github.com/madskristensen/CssTools/blob/master/CHANGELOG.md</ReleaseNotes>
     <Icon>Resources\Icon.png</Icon>
     <PreviewImage>Resources\Icon.png</PreviewImage>
