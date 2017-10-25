@@ -6,6 +6,8 @@ using Microsoft.CSS.Core.TreeItems.Functions;
 using Microsoft.CSS.Core.TreeItems.Selectors;
 using Microsoft.CSS.Core.Parser;
 using Microsoft.CSS.Core.Checker;
+using Microsoft.CSS.Core.TreeItems;
+using System.Collections.Generic;
 
 namespace CssTools
 {
@@ -33,6 +35,15 @@ namespace CssTools
                 return false;
 
             return item.UrlString.Text.Contains(";base64,");
+        }
+
+        /// <summary>
+        /// Use this to make things work on 15.4 and 15.5+
+        /// </summary>
+        public static IEnumerable<Declaration> GetDeclarations(this RuleBlock rule)
+        {
+            var declaration = rule.GetType().GetProperty("Declarations").GetValue(rule);
+            return declaration as IEnumerable<Declaration>;
         }
 
         //[SuppressMessage("Microsoft.Naming", "CA1726:UsePreferredTerms", MessageId = "Flags", Justification = "Match enum name")]

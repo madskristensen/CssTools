@@ -116,11 +116,11 @@ namespace CssTools
                 if (rule == null || rules.Contains(rule))
                     continue;
 
-                var vendors = rule.Declarations.Where(d => d.IsValid && d.IsVendorSpecific());
+                var vendors = rule.GetDeclarations().Where(d => d.IsValid && d.IsVendorSpecific());
                 foreach (Declaration vendor in vendors)
                 {
                     string name = GetStandardName(vendor);
-                    Declaration standard = rule.Declarations.FirstOrDefault(d => d.IsValid && d.PropertyName.Text == name);
+                    Declaration standard = rule.GetDeclarations().FirstOrDefault(d => d.IsValid && d.PropertyName.Text == name);
 
                     if (standard != null)
                     {

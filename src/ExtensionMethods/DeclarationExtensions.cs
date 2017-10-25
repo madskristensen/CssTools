@@ -40,7 +40,7 @@ namespace CssTools
 
             foreach (string item in possible)
             {
-                if (!rule.Declarations.Any(d => d.PropertyName != null && d.PropertyName.Text == item))
+                if (!rule.GetDeclarations().Any(d => d.PropertyName != null && d.PropertyName.Text == item))
                     yield return item;
             }
         }

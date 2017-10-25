@@ -78,7 +78,7 @@ namespace CssTools
 
         public static IEnumerable<Declaration> GetMatchingVendorEntriesInRule(Declaration declaration, RuleBlock rule, ICssSchemaInstance schema)
         {
-            foreach (Declaration d in rule.Declarations.Where(d => d.IsValid && d.IsVendorSpecific()))
+            foreach (Declaration d in rule.GetDeclarations().Where(d => d.IsValid && d.IsVendorSpecific()))
                 foreach (string prefix in GetPrefixes(schema))
                 {
                     if (d.PropertyName.Text == prefix + declaration.PropertyName.Text)
