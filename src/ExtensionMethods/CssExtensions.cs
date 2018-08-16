@@ -42,8 +42,11 @@ namespace CssTools
         /// </summary>
         public static IEnumerable<Declaration> GetDeclarations(this RuleBlock rule)
         {
-            var declaration = rule.GetType().GetProperty("Declarations").GetValue(rule);
-            return declaration as IEnumerable<Declaration>;
+            var declaration = rule.GetType().GetProperty("Declarations")?.GetValue(rule);
+            if (declaration == null)
+                return System.Linq.Enumerable.Empty<Declaration>();
+            else
+                return declaration as IEnumerable<Declaration>;
         }
 
         //[SuppressMessage("Microsoft.Naming", "CA1726:UsePreferredTerms", MessageId = "Flags", Justification = "Match enum name")]
