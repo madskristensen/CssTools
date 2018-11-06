@@ -8,12 +8,15 @@ using Microsoft.Web.Editor.EditorHelpers;
 using Microsoft.Web.Editor.Host;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using Svg;
+using Image = System.Windows.Controls.Image;
 
 namespace CssTools
 {
@@ -115,6 +118,16 @@ namespace CssTools
                         // Must cache OnLoad before the stream is disposed
                         return BitmapFrame.Create(ms, BitmapCreateOptions.None, BitmapCacheOption.OnLoad);
                     }
+                }
+                else if (url.EndsWith("svg"))
+                {
+                    SvgDocument document = SvgDocument.Open(url);
+                    Bitmap bmp = document.Draw();
+                    return BitmapFrame.Create(System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(
+                        bmp.GetHbitmap(),
+                        IntPtr.Zero,
+                        Int32Rect.Empty,
+                        BitmapSizeOptions.FromEmptyOptions()));
                 }
                 else if (url.Contains("://") || File.Exists(url))
                 {
